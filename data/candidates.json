@@ -415,8 +415,8 @@
       "applied_date": "2026-09-13",
       "years_experience": 8.0,
       "status": "active",
-      "current_stage": "Screening",
-      "note": "Recruiter screen scheduled",
+      "current_stage": "Take Home Test",
+      "note": "Take-home assignment sent",
       "stage_history": [
         {
           "stage": "Application Review",
@@ -486,7 +486,20 @@
         {
           "stage": "Screening",
           "date": "2026-09-13",
-          "detail": null
+          "detail": {
+            "type": "recruiter_review",
+            "decision": "advance",
+            "recruiter_notes": "He is good to go",
+            "recruiter_score": 5.0
+          }
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-13",
+          "detail": {
+            "type": "status",
+            "message": "Take-home assignment sent"
+          }
         }
       ]
     }
