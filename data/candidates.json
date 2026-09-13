@@ -312,12 +312,43 @@
       "years_experience": 9.0,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-13",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "Strong yes",
+            "overall_score": 4.6,
+            "notes": "",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Solid.",
+                "positives": [
+                  "Good depth"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 4.7,
+                "level": "Advanced",
+                "summary": "Great framing.",
+                "positives": [],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              }
+            ]
+          }
         }
       ]
     }
