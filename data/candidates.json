@@ -230,49 +230,6 @@
         }
       ],
       "scorecard": null
-    },
-    {
-      "id": "zzz-wiring-test-001",
-      "name": "ZZZ Wiring Test (safe to delete)",
-      "current_title": "Test Engineer",
-      "current_company": "Test Co",
-      "email": "wiring.test@example-demo.com",
-      "phone": "+1 555-000-0000",
-      "applied_date": "2026-09-13",
-      "years_experience": 9.0,
-      "status": "active",
-      "current_stage": "Technical Skills Interview",
-      "note": "Advanced to panel round - scheduling sent",
-      "stage_history": [
-        {
-          "stage": "Application Review",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Technical Skills Interview",
-          "date": "2026-09-13"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "Strong yes",
-        "overall_score": 4.6,
-        "competencies": [
-          {
-            "name": "Automation",
-            "score": 4.5,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 4.7,
-            "type": "consulting"
-          }
-        ]
-      }
     }
   ]
 }
