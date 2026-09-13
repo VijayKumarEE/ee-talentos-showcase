@@ -241,8 +241,8 @@
       "applied_date": "2026-09-13",
       "years_experience": 9.0,
       "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Assessment in progress",
+      "current_stage": "Technical Skills Interview",
+      "note": "Advanced to panel round - scheduling sent",
       "stage_history": [
         {
           "stage": "Application Review",
@@ -251,9 +251,28 @@
         {
           "stage": "Take Home Test",
           "date": "2026-09-13"
+        },
+        {
+          "stage": "Technical Skills Interview",
+          "date": "2026-09-13"
         }
       ],
-      "scorecard": null
+      "scorecard": {
+        "overall_recommendation": "Strong yes",
+        "overall_score": 4.6,
+        "competencies": [
+          {
+            "name": "Automation",
+            "score": 4.5,
+            "type": "technical"
+          },
+          {
+            "name": "Consulting Question",
+            "score": 4.7,
+            "type": "consulting"
+          }
+        ]
+      }
     }
   ]
 }
