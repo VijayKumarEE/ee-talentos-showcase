@@ -167,11 +167,7 @@ function stageStatusFor(candidate, stage) {
 
 function renderScorecardBlock(candidate, stage) {
   if (!candidate.scorecard) return "";
-  const relevantStages = ["Take Home Test", "Technical Skills Interview", "Consulting Skills Interview"];
-  if (!relevantStages.includes(stage)) return "";
-  // Only show the full scorecard once, on the last of these stages reached.
-  const reached = relevantStages.filter(s => candidate.stage_history.some(h => h.stage === s));
-  if (reached[reached.length - 1] !== stage) return "";
+  if (stage !== candidate.current_stage) return "";
 
   const sc = candidate.scorecard;
   const compRows = sc.competencies.map(c => `
@@ -181,6 +177,10 @@ function renderScorecardBlock(candidate, stage) {
     </div>
   `).join("");
 
+  const recruiterNote = candidate.recruiter_notes
+    ? `<div class="recruiter-note"><strong>Recruiter notes:</strong> ${candidate.recruiter_notes}</div>`
+    : "";
+
   return `
     <div class="stage-detail">
       <div class="scorecard-summary">
@@ -188,6 +188,7 @@ function renderScorecardBlock(candidate, stage) {
         <span class="overall-score">Overall AI score: ${sc.overall_score.toFixed(1)} / 5</span>
       </div>
       ${compRows}
+      ${recruiterNote}
     </div>
   `;
 }
