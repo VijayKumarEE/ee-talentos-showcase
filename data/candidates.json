@@ -265,8 +265,8 @@
       "applied_date": "2026-09-13",
       "years_experience": 9.0,
       "status": "active",
-      "current_stage": "Screening",
-      "note": "Recruiter screen scheduled",
+      "current_stage": "Take Home Test",
+      "note": "Advanced after recruiter screen - panel interviews scheduled",
       "stage_history": [
         {
           "stage": "Application Review",
@@ -274,6 +274,10 @@
         },
         {
           "stage": "Screening",
+          "date": "2026-09-13"
+        },
+        {
+          "stage": "Take Home Test",
           "date": "2026-09-13"
         }
       ],
@@ -292,7 +296,9 @@
             "type": "consulting"
           }
         ]
-      }
+      },
+      "recruiter_notes": "Great screen call, confident advancing.",
+      "recruiter_score": 4.5
     }
   ]
 }
