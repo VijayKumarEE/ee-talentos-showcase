@@ -416,12 +416,72 @@
       "years_experience": 8.0,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-13",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "Candidate failed to demonstrate understanding of automation concepts",
+                "positives": [],
+                "gaps": [
+                  "Failed to provide any answer"
+                ],
+                "risk_flags": [
+                  "No evidence"
+                ],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "Lacked technical insight and failed to demonstrate a clear understanding of the mechanics of pod termination in Kubernetes.",
+                "positives": [],
+                "gaps": [
+                  "Failed to provide a clear explanation of the causes of pod termination"
+                ],
+                "risk_flags": [
+                  "No evidence"
+                ],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "Candidate failed to provide any answer to the behavioral question",
+                "positives": [],
+                "gaps": [
+                  "Failed to provide any response or example"
+                ],
+                "risk_flags": [
+                  "No evidence"
+                ],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
