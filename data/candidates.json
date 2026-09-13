@@ -254,6 +254,26 @@
         }
       ],
       "scorecard": null
+    },
+    {
+      "id": "zzz-wiring-test-002",
+      "name": "ZZZ Wiring Test 2 (safe to delete)",
+      "current_title": "Test Engineer",
+      "current_company": "Test Co",
+      "email": "wiring.test2@example-demo.com",
+      "phone": "+1 555-000-0002",
+      "applied_date": "2026-09-13",
+      "years_experience": 9.0,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-13"
+        }
+      ],
+      "scorecard": null
     }
   ]
 }
