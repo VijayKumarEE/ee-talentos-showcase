@@ -230,6 +230,30 @@
         }
       ],
       "scorecard": null
+    },
+    {
+      "id": "98fca807-a11a-4dc2-96a9-87805a8761f4",
+      "name": "VIJAY KUMAR",
+      "current_title": "DevOps Engineer",
+      "current_company": "Equal Experts",
+      "email": "vijay@ee.com",
+      "phone": "9000000000",
+      "applied_date": "2026-09-13",
+      "years_experience": 8.0,
+      "status": "active",
+      "current_stage": "Take Home Test",
+      "note": "Assessment in progress",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-13"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-13"
+        }
+      ],
+      "scorecard": null
     }
   ]
 }
