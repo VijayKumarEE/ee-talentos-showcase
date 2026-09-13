@@ -265,15 +265,34 @@
       "applied_date": "2026-09-13",
       "years_experience": 9.0,
       "status": "active",
-      "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "current_stage": "Screening",
+      "note": "Recruiter screen scheduled",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-13"
+        },
+        {
+          "stage": "Screening",
+          "date": "2026-09-13"
         }
       ],
-      "scorecard": null
+      "scorecard": {
+        "overall_recommendation": "Strong yes",
+        "overall_score": 4.6,
+        "competencies": [
+          {
+            "name": "Automation",
+            "score": 4.5,
+            "type": "technical"
+          },
+          {
+            "name": "Consulting Question",
+            "score": 4.7,
+            "type": "consulting"
+          }
+        ]
+      }
     }
   ]
 }
