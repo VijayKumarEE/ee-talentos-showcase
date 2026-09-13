@@ -478,6 +478,39 @@ h1.cand-title {
   color: var(--gh-ink-soft);
 }
 
+.stage-detail-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--gh-muted);
+  margin-bottom: 12px;
+}
+
+.stage-detail-status {
+  color: var(--gh-ink-soft);
+  font-size: 13.5px;
+}
+
+.comp-detail {
+  padding: 12px 0;
+  border-top: 1px solid var(--gh-line);
+}
+.comp-detail:first-of-type { border-top: none; padding-top: 0; }
+.comp-detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+.comp-summary { font-size: 13px; color: var(--gh-ink-soft); margin-bottom: 6px; }
+.ev-row { font-size: 12.5px; color: var(--gh-ink-soft); margin-top: 3px; line-height: 1.5; }
+.ev-row strong { color: var(--gh-ink); font-weight: 600; }
+.ev-positive strong { color: var(--gh-green-dark); }
+.ev-gap strong { color: #9a7b1f; }
+.ev-flag strong { color: var(--gh-red); }
+
 .cand-side {
   width: 280px;
   flex-shrink: 0;
