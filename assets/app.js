@@ -165,32 +165,70 @@ function stageStatusFor(candidate, stage) {
   return "upcoming";
 }
 
-function renderScorecardBlock(candidate, stage) {
-  if (!candidate.scorecard) return "";
-  if (stage !== candidate.current_stage) return "";
-
-  const sc = candidate.scorecard;
-  const compRows = sc.competencies.map(c => `
-    <div class="comp-row">
-      <span class="comp-name">${c.name}<span class="comp-tag">${c.type}</span></span>
-      <span class="comp-score">${c.score.toFixed(1)} / 5</span>
-    </div>
-  `).join("");
-
-  const recruiterNote = candidate.recruiter_notes
-    ? `<div class="recruiter-note"><strong>Recruiter notes:</strong> ${candidate.recruiter_notes}</div>`
-    : "";
-
-  return `
-    <div class="stage-detail">
-      <div class="scorecard-summary">
-        <span class="rec-pill ${recSlug(sc.overall_recommendation)}">${sc.overall_recommendation}</span>
-        <span class="overall-score">Overall AI score: ${sc.overall_score.toFixed(1)} / 5</span>
+function renderCompetencyList(competencies) {
+  return competencies.map(c => {
+    const positives = c.positives.length
+      ? `<div class="ev-row ev-positive"><strong>Strengths:</strong> ${c.positives.join("; ")}</div>` : "";
+    const gaps = c.gaps.length
+      ? `<div class="ev-row ev-gap"><strong>Gaps:</strong> ${c.gaps.join("; ")}</div>` : "";
+    const flags = c.risk_flags.length
+      ? `<div class="ev-row ev-flag"><strong>Flags:</strong> ${c.risk_flags.join("; ")}</div>` : "";
+    const followUps = c.follow_up_questions.length
+      ? `<div class="ev-row"><strong>Follow-up:</strong> ${c.follow_up_questions.join(" / ")}</div>` : "";
+    return `
+      <div class="comp-detail">
+        <div class="comp-detail-head">
+          <span class="comp-name">${c.name}<span class="comp-tag">${c.type}</span></span>
+          <span class="comp-score">${c.score.toFixed(1)} / 5 &middot; ${c.level}</span>
+        </div>
+        ${c.summary ? `<div class="comp-summary">${c.summary}</div>` : ""}
+        ${positives}${gaps}${flags}${followUps}
       </div>
-      ${compRows}
-      ${recruiterNote}
-    </div>
-  `;
+    `;
+  }).join("");
+}
+
+function renderStageDetail(historyItem) {
+  const detail = historyItem && historyItem.detail;
+  if (!detail) return "";
+
+  if (detail.type === "ai_report") {
+    return `
+      <div class="stage-detail">
+        <div class="stage-detail-title">AI Assessment Report</div>
+        <div class="scorecard-summary">
+          <span class="rec-pill ${recSlug(detail.overall_recommendation)}">${detail.overall_recommendation}</span>
+          <span class="overall-score">Overall AI score: ${detail.overall_score.toFixed(1)} / 5</span>
+        </div>
+        ${renderCompetencyList(detail.competencies)}
+        ${detail.notes ? `<div class="recruiter-note">${detail.notes}</div>` : ""}
+      </div>
+    `;
+  }
+
+  if (detail.type === "recruiter_review") {
+    const decisionLabel = detail.decision === "advance" ? "Advanced" : "Not advanced";
+    return `
+      <div class="stage-detail">
+        <div class="stage-detail-title">Recruiter Screen Outcome</div>
+        <div class="scorecard-summary">
+          <span class="rec-pill ${detail.decision === "advance" ? "strongyes" : "no"}">${decisionLabel}</span>
+          ${detail.recruiter_score != null ? `<span class="overall-score">Recruiter score: ${detail.recruiter_score.toFixed(1)} / 5</span>` : ""}
+        </div>
+        ${detail.recruiter_notes ? `<div class="recruiter-note"><strong>Recruiter notes:</strong> ${detail.recruiter_notes}</div>` : ""}
+      </div>
+    `;
+  }
+
+  if (detail.type === "status") {
+    return `
+      <div class="stage-detail stage-detail-status">
+        ${detail.message}
+      </div>
+    `;
+  }
+
+  return "";
 }
 
 function renderDetail(job, candidate) {
@@ -212,7 +250,7 @@ function renderDetail(job, candidate) {
           ${hist ? `<span class="date">${fmtDate(hist.date)}</span>` : ""}
           ${badge}
         </div>
-        ${renderScorecardBlock(candidate, s)}
+        ${renderStageDetail(hist)}
       </div>
     `;
   }).join("");
