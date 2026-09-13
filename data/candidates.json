@@ -241,64 +241,15 @@
       "applied_date": "2026-09-13",
       "years_experience": 8.0,
       "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Assessment in progress",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Take Home Test",
           "date": "2026-09-13"
         }
       ],
       "scorecard": null
-    },
-    {
-      "id": "zzz-wiring-test-002",
-      "name": "ZZZ Wiring Test 2 (safe to delete)",
-      "current_title": "Test Engineer",
-      "current_company": "Test Co",
-      "email": "wiring.test2@example-demo.com",
-      "phone": "+1 555-000-0002",
-      "applied_date": "2026-09-13",
-      "years_experience": 9.0,
-      "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Advanced after recruiter screen - panel interviews scheduled",
-      "stage_history": [
-        {
-          "stage": "Application Review",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Screening",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-13"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "Strong yes",
-        "overall_score": 4.6,
-        "competencies": [
-          {
-            "name": "Automation",
-            "score": 4.5,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 4.7,
-            "type": "consulting"
-          }
-        ]
-      },
-      "recruiter_notes": "Great screen call, confident advancing.",
-      "recruiter_score": 4.5
     }
   ]
 }
