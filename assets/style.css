@@ -470,6 +470,14 @@ h1.cand-title {
 }
 .comp-score { font-weight: 700; color: var(--gh-ink); }
 
+.recruiter-note {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gh-line);
+  font-size: 13.5px;
+  color: var(--gh-ink-soft);
+}
+
 .cand-side {
   width: 280px;
   flex-shrink: 0;
