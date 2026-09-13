@@ -30,10 +30,10 @@
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-08"
+          "date": "2026-09-08",
+          "detail": null
         }
-      ],
-      "scorecard": null
+      ]
     },
     {
       "id": "cand-2b9e44",
@@ -45,19 +45,88 @@
       "applied_date": "2026-09-08",
       "years_experience": 9,
       "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Assessment in progress",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-08"
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-08"
+          "date": "2026-09-08",
+          "detail": null
         }
-      ],
-      "scorecard": null
+      ]
+    },
+    {
+      "id": "cand-4d81aa",
+      "name": "Priya Nataraj",
+      "current_title": "Cloud Operations Engineer",
+      "current_company": "Solvex Systems",
+      "email": "priya.nataraj2231@example-demo.com",
+      "phone": "+1 555-118-7743",
+      "applied_date": "2026-09-09",
+      "years_experience": 8,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Assessment complete - awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-09",
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "Strong yes",
+            "overall_score": 4.3,
+            "notes": "",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Describes a mature CI/CD pipeline with strong ownership of rollback safety.",
+                "positives": [
+                  "Built blue-green deploys from scratch",
+                  "Owns rollback tooling end to end"
+                ],
+                "gaps": [
+                  "Limited exposure to multi-region failover"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "How would you handle a failed canary at 2am?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 4.0,
+                "level": "Proficient",
+                "summary": "Solid systems fundamentals, reasons well under pressure.",
+                "positives": [
+                  "Clear mental model of the request path"
+                ],
+                "gaps": [
+                  "Slightly vague on capacity planning math"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Structured, client-first framing of the tradeoffs.",
+                "positives": [
+                  "Led with business impact before technical detail"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "cand-91cd07",
@@ -69,47 +138,68 @@
       "applied_date": "2026-09-05",
       "years_experience": 11,
       "status": "active",
-      "current_stage": "Consulting Skills Interview",
-      "note": "Interview to schedule for Consulting Skills Interview",
+      "current_stage": "Screening",
+      "note": "Recruiter screen scheduled",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-05"
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-05"
-        },
-        {
-          "stage": "Technical Skills Interview",
-          "date": "2026-09-06"
-        },
-        {
-          "stage": "Consulting Skills Interview",
-          "date": "2026-09-07"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "Strong yes",
-        "overall_score": 4.4,
-        "competencies": [
-          {
-            "name": "Automation",
-            "score": 4.5,
-            "type": "technical"
-          },
-          {
-            "name": "Technical Aptitude",
-            "score": 4.5,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 4.0,
-            "type": "consulting"
+          "date": "2026-09-05",
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "Strong yes",
+            "overall_score": 4.4,
+            "notes": "",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Strong automation-first instincts across the stack.",
+                "positives": [
+                  "Automated a manual release process end to end"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Deep, precise answers under follow-up pressure.",
+                "positives": [
+                  "Correctly reasoned about a tricky race condition"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 4.0,
+                "level": "Proficient",
+                "summary": "Good structure, slightly light on stakeholder framing.",
+                "positives": [
+                  "Clear tradeoff articulation"
+                ],
+                "gaps": [
+                  "Didn't address non-technical stakeholders explicitly"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": []
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "stage": "Screening",
+          "date": "2026-09-07",
+          "detail": null
+        }
+      ]
     },
     {
       "id": "cand-5a10e2",
@@ -120,52 +210,80 @@
       "phone": "+1 555-612-0087",
       "applied_date": "2026-09-03",
       "years_experience": 8,
-      "status": "hired",
-      "current_stage": "Offer",
-      "note": "Offer extended",
+      "status": "active",
+      "current_stage": "Take Home Test",
+      "note": "Take-home assignment sent",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-03"
+          "date": "2026-09-03",
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "Strong yes",
+            "overall_score": 4.7,
+            "notes": "",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 5.0,
+                "level": "Expert",
+                "summary": "Exceptional depth - clearly has built and run this at scale.",
+                "positives": [
+                  "Designed a self-healing deploy system used company-wide"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Strong grasp of progressive delivery patterns.",
+                "positives": [
+                  "Fluent in canary/blue-green tradeoffs"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 4.5,
+                "level": "Advanced",
+                "summary": "Confident, client-ready framing.",
+                "positives": [
+                  "Anticipated the follow-up objection unprompted"
+                ],
+                "gaps": [],
+                "risk_flags": [],
+                "follow_up_questions": []
+              }
+            ]
+          }
+        },
+        {
+          "stage": "Screening",
+          "date": "2026-09-04",
+          "detail": {
+            "type": "recruiter_review",
+            "decision": "advance",
+            "recruiter_notes": "Excellent screen - confident, articulate, clearly senior. Fast-track.",
+            "recruiter_score": 4.8
+          }
         },
         {
           "stage": "Take Home Test",
-          "date": "2026-09-03"
-        },
-        {
-          "stage": "Technical Skills Interview",
-          "date": "2026-09-04"
-        },
-        {
-          "stage": "Consulting Skills Interview",
-          "date": "2026-09-04"
-        },
-        {
-          "stage": "Offer",
-          "date": "2026-09-09"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "Strong yes",
-        "overall_score": 4.7,
-        "competencies": [
-          {
-            "name": "Automation",
-            "score": 5.0,
-            "type": "technical"
-          },
-          {
-            "name": "Continuous Delivery",
-            "score": 4.5,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 4.5,
-            "type": "consulting"
+          "date": "2026-09-09",
+          "detail": {
+            "type": "status",
+            "message": "Take-home assignment sent"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "id": "cand-c60b98",
@@ -177,39 +295,75 @@
       "applied_date": "2026-09-09",
       "years_experience": 6,
       "status": "rejected",
-      "current_stage": "Take Home Test",
-      "note": "Not moving forward after assessment",
+      "current_stage": "Screening",
+      "note": "Not moving forward after recruiter screen",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-09"
+          "date": "2026-09-09",
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 2.1,
+            "notes": "",
+            "competencies": [
+              {
+                "name": "Breadth Of Knowledge",
+                "type": "technical",
+                "score": 2.0,
+                "level": "Developing",
+                "summary": "Narrow exposure - mostly one tool/vendor.",
+                "positives": [],
+                "gaps": [
+                  "Couldn't generalize beyond their one platform"
+                ],
+                "risk_flags": [
+                  "Vague when pressed on fundamentals"
+                ],
+                "follow_up_questions": [
+                  "Have you worked outside a managed platform?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 2.5,
+                "level": "Developing",
+                "summary": "Struggled with a basic systems tradeoff question.",
+                "positives": [],
+                "gaps": [
+                  "Uncertain reasoning under follow-up"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": []
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 2.0,
+                "level": "Developing",
+                "summary": "Answer stayed purely technical, missed the business angle entirely.",
+                "positives": [],
+                "gaps": [
+                  "No stakeholder framing"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": []
+              }
+            ]
+          }
         },
         {
-          "stage": "Take Home Test",
-          "date": "2026-09-09"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "No",
-        "overall_score": 2.1,
-        "competencies": [
-          {
-            "name": "Breadth Of Knowledge",
-            "score": 2.0,
-            "type": "technical"
-          },
-          {
-            "name": "Technical Aptitude",
-            "score": 2.5,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 2.0,
-            "type": "consulting"
+          "stage": "Screening",
+          "date": "2026-09-10",
+          "detail": {
+            "type": "recruiter_review",
+            "decision": "reject",
+            "recruiter_notes": "Confirmed the AI read on the call - not a fit for the seniority we need.",
+            "recruiter_score": 2.0
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "id": "cand-3ef7a5",
@@ -222,14 +376,14 @@
       "years_experience": 5.2,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting assessment start",
+      "note": "Awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-11"
+          "date": "2026-09-11",
+          "detail": null
         }
-      ],
-      "scorecard": null
+      ]
     },
     {
       "id": "98fca807-a11a-4dc2-96a9-87805a8761f4",
@@ -246,127 +400,8 @@
       "stage_history": [
         {
           "stage": "Application Review",
-          "date": "2026-09-13"
-        }
-      ],
-      "scorecard": null
-    },
-    {
-      "id": "a856c12f-1688-471f-8fef-a10d0f0db475",
-      "name": "VIJAY KUMAR",
-      "current_title": "DevOps Engineer",
-      "current_company": "Equal Experts",
-      "email": "vijay@ee.com",
-      "phone": "9090909090",
-      "applied_date": "2026-09-13",
-      "years_experience": 8.0,
-      "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Advanced after recruiter screen - panel interviews scheduled",
-      "stage_history": [
-        {
-          "stage": "Application Review",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Screening",
-          "date": "2026-09-13"
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-13"
-        }
-      ],
-      "scorecard": {
-        "overall_recommendation": "No",
-        "overall_score": 0.0,
-        "competencies": [
-          {
-            "name": "Automation",
-            "score": 0.0,
-            "type": "technical"
-          },
-          {
-            "name": "Technical Aptitude",
-            "score": 0.0,
-            "type": "technical"
-          },
-          {
-            "name": "Consulting Question",
-            "score": 0.0,
-            "type": "consulting"
-          }
-        ]
-      },
-      "recruiter_notes": "good to go",
-      "recruiter_score": null
-    },
-    {
-      "id": "zzz-wiring-test-003",
-      "name": "ZZZ Wiring Test 3 (safe to delete)",
-      "current_title": "Test Engineer",
-      "current_company": "Test Co",
-      "email": "wiring.test3@example-demo.com",
-      "phone": "+1 555-000-0003",
-      "applied_date": "2026-09-13",
-      "years_experience": 9.0,
-      "status": "active",
-      "current_stage": "Take Home Test",
-      "note": "Take-home assignment sent",
-      "stage_history": [
-        {
-          "stage": "Application Review",
           "date": "2026-09-13",
-          "detail": {
-            "type": "ai_report",
-            "overall_recommendation": "Strong yes",
-            "overall_score": 4.6,
-            "notes": "",
-            "competencies": [
-              {
-                "name": "Automation",
-                "type": "technical",
-                "score": 4.5,
-                "level": "Advanced",
-                "summary": "Solid.",
-                "positives": [
-                  "Good depth"
-                ],
-                "gaps": [],
-                "risk_flags": [],
-                "follow_up_questions": []
-              },
-              {
-                "name": "Consulting Question",
-                "type": "consulting",
-                "score": 4.7,
-                "level": "Advanced",
-                "summary": "Great framing.",
-                "positives": [],
-                "gaps": [],
-                "risk_flags": [],
-                "follow_up_questions": []
-              }
-            ]
-          }
-        },
-        {
-          "stage": "Screening",
-          "date": "2026-09-13",
-          "detail": {
-            "type": "recruiter_review",
-            "decision": "advance",
-            "recruiter_notes": "Great call, advancing.",
-            "recruiter_score": 4.5
-          }
-        },
-        {
-          "stage": "Take Home Test",
-          "date": "2026-09-13",
-          "detail": {
-            "type": "status",
-            "message": "Take-home assignment sent"
-          }
+          "detail": null
         }
       ]
     }
