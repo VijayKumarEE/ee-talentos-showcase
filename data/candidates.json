@@ -28,7 +28,10 @@
       "current_stage": "Application Review",
       "note": "Auto-screened out",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-08" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-08"
+        }
       ],
       "scorecard": null
     },
@@ -45,8 +48,14 @@
       "current_stage": "Take Home Test",
       "note": "Assessment in progress",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-08" },
-        { "stage": "Take Home Test", "date": "2026-09-08" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-08"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-08"
+        }
       ],
       "scorecard": null
     },
@@ -63,18 +72,42 @@
       "current_stage": "Consulting Skills Interview",
       "note": "Interview to schedule for Consulting Skills Interview",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-05" },
-        { "stage": "Take Home Test", "date": "2026-09-05" },
-        { "stage": "Technical Skills Interview", "date": "2026-09-06" },
-        { "stage": "Consulting Skills Interview", "date": "2026-09-07" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-05"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-05"
+        },
+        {
+          "stage": "Technical Skills Interview",
+          "date": "2026-09-06"
+        },
+        {
+          "stage": "Consulting Skills Interview",
+          "date": "2026-09-07"
+        }
       ],
       "scorecard": {
         "overall_recommendation": "Strong yes",
         "overall_score": 4.4,
         "competencies": [
-          { "name": "Automation", "score": 4.5, "type": "technical" },
-          { "name": "Technical Aptitude", "score": 4.5, "type": "technical" },
-          { "name": "Consulting Question", "score": 4.0, "type": "consulting" }
+          {
+            "name": "Automation",
+            "score": 4.5,
+            "type": "technical"
+          },
+          {
+            "name": "Technical Aptitude",
+            "score": 4.5,
+            "type": "technical"
+          },
+          {
+            "name": "Consulting Question",
+            "score": 4.0,
+            "type": "consulting"
+          }
         ]
       }
     },
@@ -91,19 +124,46 @@
       "current_stage": "Offer",
       "note": "Offer extended",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-03" },
-        { "stage": "Take Home Test", "date": "2026-09-03" },
-        { "stage": "Technical Skills Interview", "date": "2026-09-04" },
-        { "stage": "Consulting Skills Interview", "date": "2026-09-04" },
-        { "stage": "Offer", "date": "2026-09-09" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-03"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-03"
+        },
+        {
+          "stage": "Technical Skills Interview",
+          "date": "2026-09-04"
+        },
+        {
+          "stage": "Consulting Skills Interview",
+          "date": "2026-09-04"
+        },
+        {
+          "stage": "Offer",
+          "date": "2026-09-09"
+        }
       ],
       "scorecard": {
         "overall_recommendation": "Strong yes",
         "overall_score": 4.7,
         "competencies": [
-          { "name": "Automation", "score": 5.0, "type": "technical" },
-          { "name": "Continuous Delivery", "score": 4.5, "type": "technical" },
-          { "name": "Consulting Question", "score": 4.5, "type": "consulting" }
+          {
+            "name": "Automation",
+            "score": 5.0,
+            "type": "technical"
+          },
+          {
+            "name": "Continuous Delivery",
+            "score": 4.5,
+            "type": "technical"
+          },
+          {
+            "name": "Consulting Question",
+            "score": 4.5,
+            "type": "consulting"
+          }
         ]
       }
     },
@@ -120,16 +180,34 @@
       "current_stage": "Take Home Test",
       "note": "Not moving forward after assessment",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-09" },
-        { "stage": "Take Home Test", "date": "2026-09-09" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-09"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-09"
+        }
       ],
       "scorecard": {
         "overall_recommendation": "No",
         "overall_score": 2.1,
         "competencies": [
-          { "name": "Breadth Of Knowledge", "score": 2.0, "type": "technical" },
-          { "name": "Technical Aptitude", "score": 2.5, "type": "technical" },
-          { "name": "Consulting Question", "score": 2.0, "type": "consulting" }
+          {
+            "name": "Breadth Of Knowledge",
+            "score": 2.0,
+            "type": "technical"
+          },
+          {
+            "name": "Technical Aptitude",
+            "score": 2.5,
+            "type": "technical"
+          },
+          {
+            "name": "Consulting Question",
+            "score": 2.0,
+            "type": "consulting"
+          }
         ]
       }
     },
@@ -146,7 +224,34 @@
       "current_stage": "Application Review",
       "note": "Awaiting assessment start",
       "stage_history": [
-        { "stage": "Application Review", "date": "2026-09-11" }
+        {
+          "stage": "Application Review",
+          "date": "2026-09-11"
+        }
+      ],
+      "scorecard": null
+    },
+    {
+      "id": "zzz-wiring-test-001",
+      "name": "ZZZ Wiring Test (safe to delete)",
+      "current_title": "Test Engineer",
+      "current_company": "Test Co",
+      "email": "wiring.test@example-demo.com",
+      "phone": "+1 555-000-0000",
+      "applied_date": "2026-09-13",
+      "years_experience": 9.0,
+      "status": "active",
+      "current_stage": "Take Home Test",
+      "note": "Assessment in progress",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-13"
+        },
+        {
+          "stage": "Take Home Test",
+          "date": "2026-09-13"
+        }
       ],
       "scorecard": null
     }
