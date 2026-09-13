@@ -1,0 +1,154 @@
+{
+  "job": {
+    "title": "IND - Operability Engineer",
+    "location": "India",
+    "status": "Open",
+    "department": "Operability"
+  },
+  "stages": [
+    "Application Review",
+    "Screening",
+    "Take Home Test",
+    "Technical Skills Interview",
+    "Consulting Skills Interview",
+    "Offer",
+    "Hired"
+  ],
+  "candidates": [
+    {
+      "id": "cand-7f3a1c",
+      "name": "Avery Bennett",
+      "current_title": "Site Reliability Engineer",
+      "current_company": "Northwind Systems",
+      "email": "avery.bennett4821@example-demo.com",
+      "phone": "+1 555-241-8830",
+      "applied_date": "2026-09-08",
+      "years_experience": 4.5,
+      "status": "rejected",
+      "current_stage": "Application Review",
+      "note": "Auto-screened out",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-08" }
+      ],
+      "scorecard": null
+    },
+    {
+      "id": "cand-2b9e44",
+      "name": "Jordan Carter",
+      "current_title": "DevOps Consultant",
+      "current_company": "Kestrel Cloud",
+      "email": "jordan.carter1190@example-demo.com",
+      "phone": "+1 555-308-2214",
+      "applied_date": "2026-09-08",
+      "years_experience": 9,
+      "status": "active",
+      "current_stage": "Take Home Test",
+      "note": "Assessment in progress",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-08" },
+        { "stage": "Take Home Test", "date": "2026-09-08" }
+      ],
+      "scorecard": null
+    },
+    {
+      "id": "cand-91cd07",
+      "name": "Riley Dawson",
+      "current_title": "Lead DevSecOps Engineer",
+      "current_company": "Fathom Insurance Group",
+      "email": "riley.dawson7702@example-demo.com",
+      "phone": "+1 555-475-6693",
+      "applied_date": "2026-09-05",
+      "years_experience": 11,
+      "status": "active",
+      "current_stage": "Consulting Skills Interview",
+      "note": "Interview to schedule for Consulting Skills Interview",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-05" },
+        { "stage": "Take Home Test", "date": "2026-09-05" },
+        { "stage": "Technical Skills Interview", "date": "2026-09-06" },
+        { "stage": "Consulting Skills Interview", "date": "2026-09-07" }
+      ],
+      "scorecard": {
+        "overall_recommendation": "Strong yes",
+        "overall_score": 4.4,
+        "competencies": [
+          { "name": "Automation", "score": 4.5, "type": "technical" },
+          { "name": "Technical Aptitude", "score": 4.5, "type": "technical" },
+          { "name": "Consulting Question", "score": 4.0, "type": "consulting" }
+        ]
+      }
+    },
+    {
+      "id": "cand-5a10e2",
+      "name": "Casey Ellison",
+      "current_title": "Senior DevOps Engineer",
+      "current_company": "Bramwell Retail Corp",
+      "email": "casey.ellison3345@example-demo.com",
+      "phone": "+1 555-612-0087",
+      "applied_date": "2026-09-03",
+      "years_experience": 8,
+      "status": "hired",
+      "current_stage": "Offer",
+      "note": "Offer extended",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-03" },
+        { "stage": "Take Home Test", "date": "2026-09-03" },
+        { "stage": "Technical Skills Interview", "date": "2026-09-04" },
+        { "stage": "Consulting Skills Interview", "date": "2026-09-04" },
+        { "stage": "Offer", "date": "2026-09-09" }
+      ],
+      "scorecard": {
+        "overall_recommendation": "Strong yes",
+        "overall_score": 4.7,
+        "competencies": [
+          { "name": "Automation", "score": 5.0, "type": "technical" },
+          { "name": "Continuous Delivery", "score": 4.5, "type": "technical" },
+          { "name": "Consulting Question", "score": 4.5, "type": "consulting" }
+        ]
+      }
+    },
+    {
+      "id": "cand-c60b98",
+      "name": "Morgan Foster",
+      "current_title": "Platform Engineer",
+      "current_company": "Redgate Analytics",
+      "email": "morgan.foster9021@example-demo.com",
+      "phone": "+1 555-770-4432",
+      "applied_date": "2026-09-09",
+      "years_experience": 6,
+      "status": "rejected",
+      "current_stage": "Take Home Test",
+      "note": "Not moving forward after assessment",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-09" },
+        { "stage": "Take Home Test", "date": "2026-09-09" }
+      ],
+      "scorecard": {
+        "overall_recommendation": "No",
+        "overall_score": 2.1,
+        "competencies": [
+          { "name": "Breadth Of Knowledge", "score": 2.0, "type": "technical" },
+          { "name": "Technical Aptitude", "score": 2.5, "type": "technical" },
+          { "name": "Consulting Question", "score": 2.0, "type": "consulting" }
+        ]
+      }
+    },
+    {
+      "id": "cand-3ef7a5",
+      "name": "Taylor Grayson",
+      "current_title": "Cloud Infrastructure Engineer",
+      "current_company": "Ashworth Digital",
+      "email": "taylor.grayson5567@example-demo.com",
+      "phone": "+1 555-905-1128",
+      "applied_date": "2026-09-11",
+      "years_experience": 5.2,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting assessment start",
+      "stage_history": [
+        { "stage": "Application Review", "date": "2026-09-11" }
+      ],
+      "scorecard": null
+    }
+  ]
+}
