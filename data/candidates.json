@@ -583,12 +583,76 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-15",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.67,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 2.0,
+                "level": "advanced_beginner",
+                "summary": "candidate demonstrates some understanding of continuous delivery, but lacks depth and clarity in key areas",
+                "positives": [
+                  "describing post-deploy validation as a required step"
+                ],
+                "gaps": [
+                  "lacking technical detail, unclear deployment strategy",
+                  "missing explanation of policy enforcement"
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "Lacked any response to assess breadth of knowledge",
+                "positives": [],
+                "gaps": [
+                  "Failed to provide any answer"
+                ],
+                "risk_flags": [
+                  "No evidence"
+                ],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "Candidate failed to provide any response to the question, indicating a lack of communication skills.",
+                "positives": [
+                  "no answer provided"
+                ],
+                "gaps": [
+                  "failed to provide a specific example",
+                  "failed to answer the question"
+                ],
+                "risk_flags": [
+                  "No evidence"
+                ],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
