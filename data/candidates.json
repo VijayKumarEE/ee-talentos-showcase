@@ -673,6 +673,29 @@
           }
         }
       ]
+    },
+    {
+      "id": "d336da6e-59b4-4f39-9030-1bb8a5e1eef5",
+      "name": "KIRAN BHAT",
+      "current_title": "Senior Cloud Engineer",
+      "current_company": "Northbridge Technologies",
+      "email": "kiran.bhat@northbridgetech.com",
+      "phone": "+91 90000 00005",
+      "applied_date": "2026-09-15",
+      "years_experience": 6.4,
+      "status": "rejected",
+      "current_stage": "Application Review",
+      "note": "Auto-rejected: 6.4 years of experience, below the 7.5 year minimum for this role",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-15",
+          "detail": {
+            "type": "status",
+            "message": "Auto-rejected: 6.4 years of experience, below the 7.5 year minimum for this role"
+          }
+        }
+      ]
     }
   ]
 }
