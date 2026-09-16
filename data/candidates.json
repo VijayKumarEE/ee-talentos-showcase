@@ -806,12 +806,77 @@
       "years_experience": 7.8,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-16",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 2.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is not in English and does not provide any information to assess their breadth of knowledge.",
+                "positives": [],
+                "gaps": [
+                  "Candidate's answer is in Hindi and translates to \"Oh man\", which does not provide any relevant information for assessment."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 4.0,
+                "level": "proficient",
+                "summary": "The candidate provides a strong explanation for the importance of multi-stage Docker builds, demonstrating a good understanding of the security and efficiency benefits. They also show good judgment in prioritizing security and reproducibility over temporary build time compromises, while suggesting alternative optimization strategies. However, the answer is limited to container hardening and doesn't cover other key aspects of automation.",
+                "positives": [
+                  "Explains the 'why' behind multi-stage builds (smaller, cleaner, more secure, reduced attack surface, avoiding shipping build tools/source code).",
+                  "Demonstrates an understanding of trade-offs and prioritizing security/reproducibility over temporary build time savings.",
+                  "Suggests alternative, safer ways to reduce build time (docker layer caching, build kit, optimizing layers) instead of compromising core principles.",
+                  "Shows a commitment to restoring proper practices after a deadline."
+                ],
+                "gaps": [
+                  "Could have explicitly mentioned pinning base images by SHA256 digest or running as non-root user for a more comprehensive answer on container hardening.",
+                  "Did not touch upon other aspects of automation like Terraform state management, CI/CD quality gates, or secrets management."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 3.0,
+                "level": "competent",
+                "summary": "The candidate provides a relevant example of how they would handle a client's request that might not be optimal, suggesting POCs as a method to guide them. The answer demonstrates an understanding of consulting principles, but it could be more specific and articulate in its communication and the example itself is a bit generic.",
+                "positives": [
+                  "Addresses the question of adaptability by describing a scenario where a client's request needs to be handled carefully.",
+                  "Suggests using Proof of Concepts (POCs) as a method to guide the client towards better solutions.",
+                  "Emphasizes helping the client in the 'longer run' rather than just rejecting their idea."
+                ],
+                "gaps": [
+                  "The example is somewhat generic and lacks specific details about a particular situation, the client's initial request, or the outcome of the POCs.",
+                  "The communication could be more structured and articulate, avoiding slightly informal phrasing like 'rather than directly telling them like this is not feasible or possible we go with POCs and tell them what happens if they use Python or Java'.",
+                  "Doesn't explicitly state how they adapted their approach or thinking, but rather how they would guide the client."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
