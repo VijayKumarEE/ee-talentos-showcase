@@ -727,12 +727,68 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-16",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate explicitly stated they did not know the answer, demonstrating a complete lack of understanding of continuous delivery concepts.",
+                "positives": [],
+                "gaps": [
+                  "Candidate stated 'I don't know', indicating no understanding of the competency."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate expressed uncertainty and did not provide any substantive answer or demonstration of knowledge regarding the breadth of knowledge topics.",
+                "positives": [],
+                "gaps": [
+                  "Candidate stated 'I'm not really sure', indicating a lack of confidence and likely limited understanding.",
+                  "Did not provide any specific technical details or explanations."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate stated they had no experience relevant to the behavioral question, failing to provide a specific example or answer the question asked.",
+                "positives": [],
+                "gaps": [
+                  "Candidate stated 'I never got a chance to be in that situation', indicating an inability to provide a specific example as requested.",
+                  "Did not answer the behavioral question with a relevant experience."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
