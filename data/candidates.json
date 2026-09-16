@@ -796,6 +796,24 @@
           "detail": null
         }
       ]
+    },
+    {
+      "id": "52e61e56-d23b-461e-8817-d094d5a54bf5",
+      "name": "PRATAP NAIR",
+      "current_title": "DevOps Lead",
+      "current_company": "Skyline Cloud Services",
+      "applied_date": "2026-09-16",
+      "years_experience": 7.8,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-16",
+          "detail": null
+        }
+      ]
     }
   ]
 }
