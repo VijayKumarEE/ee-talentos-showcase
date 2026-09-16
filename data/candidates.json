@@ -889,12 +889,66 @@
       "years_experience": 8.5,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-16",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate explicitly stated they did not know the answer, demonstrating no understanding of the competency.",
+                "positives": [],
+                "gaps": [
+                  "Candidate stated 'I don't know' for this section, indicating a complete lack of knowledge or ability to answer the questions related to operability, observability, networking, and troubleshooting."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate explicitly stated they did not know the answer, demonstrating no understanding of the competency.",
+                "positives": [],
+                "gaps": [
+                  "Candidate stated 'Mary, I don't know' for this section, indicating a complete lack of knowledge or ability to answer the questions related to automation, container hardening, infrastructure-as-code, CI/CD, and secrets management."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate indicated they have no experience in the situation asked, failing to provide a specific example or address the question.",
+                "positives": [],
+                "gaps": [
+                  "The candidate stated 'I never been in this situation,' which indicates an inability to provide a specific example or answer the behavioral question about adaptability."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
