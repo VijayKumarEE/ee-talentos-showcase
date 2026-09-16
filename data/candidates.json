@@ -726,8 +726,8 @@
       "applied_date": "2026-09-16",
       "years_experience": 8.4,
       "status": "active",
-      "current_stage": "Application Review",
-      "note": "Assessment complete - awaiting recruiter review",
+      "current_stage": "Screening",
+      "note": "Recruiter screen scheduled",
       "stage_history": [
         {
           "stage": "Application Review",
@@ -789,6 +789,11 @@
               }
             ]
           }
+        },
+        {
+          "stage": "Screening",
+          "date": "2026-09-16",
+          "detail": null
         }
       ]
     }
