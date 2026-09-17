@@ -1141,12 +1141,68 @@
       "years_experience": 10.1,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-17",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided no answer for this competency.",
+                "positives": [],
+                "gaps": [
+                  "No answer provided."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a single word 'application' which does not demonstrate any understanding of the competency.",
+                "positives": [],
+                "gaps": [
+                  "No meaningful answer provided."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided an answer in a foreign language (Hindi) which could not be assessed for communication quality or specificity. It did not answer the question asked.",
+                "positives": [],
+                "gaps": [
+                  "No English answer provided.",
+                  "No specific example given.",
+                  "Did not answer the question asked."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
