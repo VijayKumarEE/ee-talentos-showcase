@@ -966,12 +966,66 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-17",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide an answer, making it impossible to assess their technical aptitude.",
+                "positives": [],
+                "gaps": [
+                  "The candidate provided no answer for this competency."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide an answer, making it impossible to assess their understanding of continuous delivery.",
+                "positives": [],
+                "gaps": [
+                  "The candidate provided no answer for this competency."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate's response that they never faced a challenge with unfamiliar technology is unhelpful for assessing their continuous learning or problem-solving approach. It lacks specificity and does not provide a real example.",
+                "positives": [],
+                "gaps": [
+                  "The candidate stated they never faced a challenge with unfamiliar technology, which does not answer the implicit question of how they approach continuous learning or overcome challenges. This indicates a lack of specific examples or an unwillingness to share a challenge."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
