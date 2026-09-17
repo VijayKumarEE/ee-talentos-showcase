@@ -956,6 +956,24 @@
           "detail": null
         }
       ]
+    },
+    {
+      "id": "d343971c-a4c1-4692-9b08-335b1192ef1f",
+      "name": "SHRINIDI RAO",
+      "current_title": "Senior DevOps Engineer",
+      "current_company": "Vertex Cloud Labs",
+      "applied_date": "2026-09-17",
+      "years_experience": 8.4,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-17",
+          "detail": null
+        }
+      ]
     }
   ]
 }
