@@ -1064,12 +1064,66 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-17",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response was unintelligible and did not address the competency. It's impossible to assess their technical aptitude based on this answer.",
+                "positives": [],
+                "gaps": [
+                  "Candidate provided an incomplete and nonsensical answer, indicating no understanding or ability to articulate concepts related to technical aptitude."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response was unintelligible and did not address the competency. It's impossible to assess their understanding of continuous delivery based on this answer.",
+                "positives": [],
+                "gaps": [
+                  "Candidate provided an incomplete and nonsensical answer, indicating no understanding or ability to articulate concepts related to continuous delivery."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide an answer to the behavioral question. The provided text seems to be the interviewer asking a question, not the candidate's response.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide an answer to the question. The response appears to be the interviewer's question or a fragment of it."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
