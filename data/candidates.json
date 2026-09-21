@@ -1337,6 +1337,24 @@
           "detail": null
         }
       ]
+    },
+    {
+      "id": "869bfab5-d7eb-48b0-8de0-3843dde62a31",
+      "name": "DARSHAN SHETTY",
+      "current_title": "DevOps Engineer II",
+      "current_company": "BlueCrest Technologies",
+      "applied_date": "2026-09-21",
+      "years_experience": 8.8,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-21",
+          "detail": null
+        }
+      ]
     }
   ]
 }
