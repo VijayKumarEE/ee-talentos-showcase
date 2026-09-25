@@ -1460,6 +1460,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "e7de3eff-846d-49af-aa19-5cb70f013548",
+      "name": "PUJA IYER",
+      "current_title": "DevOps Engineer",
+      "current_company": "Clearwave Systems",
+      "applied_date": "2026-09-25",
+      "years_experience": 8.0,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-09-25",
+          "detail": null
+        }
+      ]
     }
   ]
 }
