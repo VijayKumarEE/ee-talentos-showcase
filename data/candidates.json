@@ -1470,12 +1470,76 @@
       "years_experience": 8.0,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-09-25",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 1.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate's answer is largely in a non-English language, making it impossible to assess technical aptitude. The only discernible English phrase is about avoiding forced delete, but it lacks context or explanation, indicating a very weak understanding of the underlying reasons or alternatives.",
+                "positives": [
+                  "Candidate mentions avoiding forced delete."
+                ],
+                "gaps": [
+                  "The answer is mostly in a non-English language (Telugu) and then a very short, incomplete English phrase.",
+                  "No actual technical explanation or diagnostic sequence is provided.",
+                  "The candidate does not elaborate on *why* forced delete should be avoided, nor does it connect to the reference knowledge about data corruption."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 2.0,
+                "level": "advanced_beginner",
+                "summary": "The candidate provides a very brief and vague statement about changing deployment for high-risk production changes. It lacks any specifics on *how* or *why* these changes would be made, and doesn't touch upon any of the core concepts of continuous delivery like validation, different strategies, or policy enforcement.",
+                "positives": [
+                  "Candidate mentions changing deployment for high-risk production changes."
+                ],
+                "gaps": [
+                  "The answer is extremely brief and lacks any detail or explanation.",
+                  "It does not elaborate on *what* deployment changes would be made or *why* they are suitable for high-risk scenarios.",
+                  "There's no mention of post-deploy validation, different deployment strategies (rolling, blue-green, canary), or policy-as-code."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate explicitly states they have not faced the situation described in the question, thus failing to provide a specific example or answer the question asked. This indicates a lack of ability to reflect on past experiences or provide a relevant response to a behavioral question.",
+                "positives": [],
+                "gaps": [
+                  "The candidate states they have not faced a situation with a disengaged team member, which avoids answering the question.",
+                  "There is no specific example provided.",
+                  "The answer lacks clarity and specificity, failing to demonstrate communication skills in a behavioral context."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
