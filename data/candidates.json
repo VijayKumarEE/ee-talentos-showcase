@@ -1707,12 +1707,75 @@
       "years_experience": 8.5,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-06",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 1.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate's answer is too high-level and lacks the technical depth expected for automation in an Operability Engineer role. It touches on basic development workflow but misses key aspects of robust automation, testing, and deployment strategies.",
+                "positives": [],
+                "gaps": [
+                  "Candidate's answer is very brief and lacks specific technical details related to automation best practices.",
+                  "The answer mentions local testing and committing, but doesn't elaborate on CI/CD pipelines, quality gates, secret management, or infrastructure-as-code principles.",
+                  "There's no explanation of 'why' certain automation steps are important or what risks they mitigate."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response indicates a complete lack of familiarity or understanding of the technical aptitude required for the role, offering no insights or problem-solving approaches.",
+                "positives": [],
+                "gaps": [
+                  "The candidate explicitly states 'I'm not really sure,' indicating a lack of knowledge or experience in the area.",
+                  "No technical details or diagnostic sequences are provided.",
+                  "The answer does not demonstrate any awareness of full-stack issues, troubleshooting methodologies, or common pitfalls in production environments."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 2.0,
+                "level": "advanced_beginner",
+                "summary": "The candidate expresses a general willingness to connect and support team members, which is positive. However, the answer lacks the specificity and a concrete example that would demonstrate effective relationship-building in practice. It's more of a statement of intent than a demonstration of past experience.",
+                "positives": [
+                  "Candidate mentions connecting with team members, even those in isolation.",
+                  "Emphasizes understanding tasks and offering help to team members."
+                ],
+                "gaps": [
+                  "The answer is somewhat vague and generic, lacking a specific, real-world example of building relationships.",
+                  "It describes a general approach rather than a concrete situation or challenge encountered and overcome.",
+                  "The communication could be more structured and less conversational."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
