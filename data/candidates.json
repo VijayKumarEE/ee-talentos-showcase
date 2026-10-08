@@ -1788,12 +1788,70 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-08",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide any content for the technical aptitude section. The response was an introduction to the interview format rather than an answer to the questions.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide an answer to the technical aptitude questions.",
+                  "No demonstration of full-stack awareness, ability to build maintainable services, tests, load balancers, CI/CD, cloud, containers, or developer peer discussion."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide any content for the continuous delivery section. The response was an introduction to the interview format rather than an answer to the questions.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide an answer to the continuous delivery questions.",
+                  "No discussion of small increments, production-first thinking, feature flags, canary deployments, or separation of deployment from release."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate acknowledged the question but did not provide a specific example of working with a disengaged team member. The answer was a general statement about daily interactions and ensuring engagement, lacking the requested specificity and detail.",
+                "positives": [],
+                "gaps": [
+                  "The candidate did not provide a specific example as requested.",
+                  "The answer was a general statement rather than a detailed account of a past experience.",
+                  "The candidate did not clearly articulate how they ensured disengaged team members became engaged, beyond a general claim."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
