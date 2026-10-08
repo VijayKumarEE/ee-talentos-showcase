@@ -1960,12 +1960,66 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-08",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response is entirely irrelevant to the 'automation' competency. It discusses the interview process rather than demonstrating any technical understanding of automation principles or practices.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is completely off-topic and does not address any aspect of automation, cost implications, testing, or any of the reference knowledge points. It appears to be a meta-commentary on the interview process itself."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response is entirely irrelevant to the 'technical_aptitude' competency. It discusses interview engagement strategies rather than demonstrating any technical understanding or problem-solving skills.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is completely off-topic and does not address any aspect of technical aptitude, system design, troubleshooting, or any of the reference knowledge points. It appears to be a meta-commentary on how to keep interviewees engaged."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response is a short, emotional plea that does not answer any consulting or behavioral question. It lacks any substance, clarity, or specific examples.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a plea and does not provide a real, specific example or address any behavioral/consulting question. It lacks clarity, specificity, and does not answer a question."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
