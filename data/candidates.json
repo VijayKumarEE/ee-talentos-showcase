@@ -1885,12 +1885,69 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-08",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer was a non-response, indicating they did not address the question or demonstrate any understanding of continuous delivery concepts.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide a substantive answer to the question.",
+                  "No technical understanding or relevant concepts were demonstrated."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate explicitly stated they did not know the answer, providing no content to assess their breadth of knowledge.",
+                "positives": [],
+                "gaps": [
+                  "Candidate explicitly stated they did not know the answer.",
+                  "No technical understanding or relevant concepts were demonstrated."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer was a re-statement of the question, not an actual response, and therefore provided no content to assess their communication or specificity.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide an answer to the question.",
+                  "The response was a re-statement of the question or an acknowledgement of it, not an answer."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
