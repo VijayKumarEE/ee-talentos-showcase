@@ -2555,12 +2555,66 @@
       "years_experience": 8.6,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is a non-sequitur and does not demonstrate any understanding of continuous delivery concepts.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a direct quote that does not address the technical aspects of continuous delivery. It provides no information about post-deploy validation, deployment strategies, or policy enforcement."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Breadth of Knowledge",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is a non-sequitur and does not demonstrate any understanding of the breadth of knowledge required for the role.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a direct quote that does not address any technical aspects of breadth of knowledge. It provides no information about networking, troubleshooting, or system components."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Breadth of Knowledge?",
+                  "What trade-offs did you consider in Breadth of Knowledge?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is a non-sequitur and does not provide a relevant response to the behavioral question.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a direct quote that does not provide a specific example or address the behavioral question asked. It lacks clarity and specificity."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
