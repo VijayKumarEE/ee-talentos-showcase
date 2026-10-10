@@ -2411,12 +2411,66 @@
       "years_experience": 8.6,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a completely irrelevant and nonsensical answer, demonstrating no understanding of the automation competency.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is nonsensical and does not address any aspect of the automation competency. It appears to be a random string of words."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a completely irrelevant and nonsensical answer, demonstrating no understanding of the technical aptitude competency.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is nonsensical and does not address any aspect of the technical aptitude competency. It appears to be a random string of words."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a completely irrelevant and nonsensical answer, failing to address the behavioral question or demonstrate any communication quality.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is nonsensical and does not provide a real, specific example or address the question asked. It appears to be a random string of words."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
