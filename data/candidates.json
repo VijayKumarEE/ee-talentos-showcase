@@ -2339,12 +2339,66 @@
       "years_experience": 8.6,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide any relevant information to assess their technical aptitude. The response was a comment about the interview format.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide a substantive answer related to the competency. The response was a meta-comment about the interview process."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide any relevant information to assess their understanding of continuous delivery. The response was a comment about the interview format.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide a substantive answer related to the competency. The response was a meta-comment about the interview process."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate did not provide a substantive answer to the behavioral question. The response was a meta-comment about the interview format.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide a substantive answer to the behavioral question. The response was a meta-comment about the interview process."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
