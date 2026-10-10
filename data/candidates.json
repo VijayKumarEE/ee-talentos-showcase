@@ -2329,6 +2329,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "7089534b-acf8-40a2-89d8-c7910cc53827",
+      "name": "KIRAN BHAT",
+      "current_title": "Senior Cloud Engineer",
+      "current_company": "Northbridge Technologies",
+      "applied_date": "2026-10-10",
+      "years_experience": 8.6,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-10-10",
+          "detail": null
+        }
+      ]
     }
   ]
 }
