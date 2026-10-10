@@ -2179,6 +2179,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "889c8761-82a1-433e-aa41-9ee9c029e931",
+      "name": "VIJAY KUMAR",
+      "current_title": "DevOps Engineer",
+      "current_company": "Equal Experts",
+      "applied_date": "2026-10-10",
+      "years_experience": 8.4,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-10-10",
+          "detail": null
+        }
+      ]
     }
   ]
 }
