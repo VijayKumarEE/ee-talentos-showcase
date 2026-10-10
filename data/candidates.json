@@ -2027,6 +2027,24 @@
           "detail": null
         }
       ]
+    },
+    {
+      "id": "3e9b21ee-e4c1-429d-b8be-6ade72899f9b",
+      "name": "Thomas Granier",
+      "current_title": "DevOps Lead",
+      "current_company": "Skyline Cloud Services",
+      "applied_date": "2026-10-10",
+      "years_experience": 8.8,
+      "status": "active",
+      "current_stage": "Application Review",
+      "note": "Awaiting recruiter review",
+      "stage_history": [
+        {
+          "stage": "Application Review",
+          "date": "2026-10-10",
+          "detail": null
+        }
+      ]
     }
   ]
 }
