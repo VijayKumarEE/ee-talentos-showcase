@@ -2037,12 +2037,72 @@
       "years_experience": 8.8,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is too brief and generic to assess any technical aptitude. It provides no information relevant to the competency.",
+                "positives": [],
+                "gaps": [
+                  "The answer is extremely short and generic, providing no specific technical details or insights into problem-solving approaches.",
+                  "No demonstration of understanding of full-stack awareness, maintainable services, testing, load balancers, CI/CD, cloud, containers, or developer peer discussion.",
+                  "Does not address any of the core mechanics or strong answer characteristics outlined in the reference knowledge."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Continuous Delivery",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is incoherent and does not address any aspect of continuous delivery.",
+                "positives": [],
+                "gaps": [
+                  "The answer is nonsensical and does not relate to continuous delivery concepts.",
+                  "No mention of small increments, production-first thinking, feature flags, canary deployments, separation of deployment from release, or any of the core mechanics.",
+                  "Does not demonstrate understanding of post-deploy validation, deployment strategies, or validating fixes against original symptoms."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Continuous Delivery?",
+                  "What trade-offs did you consider in Continuous Delivery?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's answer is vague and does not provide a specific example or clear communication regarding continuous learning.",
+                "positives": [],
+                "gaps": [
+                  "The answer is vague and does not provide a specific example of continuous learning.",
+                  "It lacks clarity and does not directly answer the implied question about continuous learning or how they apply it.",
+                  "The statement is generic and does not offer any insight into the candidate's communication style or ability to provide specific examples."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
