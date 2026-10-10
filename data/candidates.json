@@ -2189,12 +2189,69 @@
       "years_experience": 8.4,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.0,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a generic pleasantry that did not address any aspect of the automation competency. There is no information to assess their understanding of automation principles.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide any relevant information regarding automation, repeatable work, cost implications, or testing.",
+                  "The answer 'Yes, it's an honor.' is a generic pleasantry and does not address the competency."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response was nonsensical and provided no information to assess their technical aptitude. There is no basis to evaluate their understanding of any technical concepts.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide any relevant information regarding technical aptitude, full-stack awareness, maintainable services, CI/CD, cloud, containers, or problem-solving.",
+                  "The answer 'secret about him.' is nonsensical and does not address the competency."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate's response was vague and did not provide a specific example or directly answer the behavioral question. It lacked clarity and specificity.",
+                "positives": [],
+                "gaps": [
+                  "Candidate did not provide a specific example or answer the question asked.",
+                  "The response 'Holy language. It's calm. And it's calm.' is vague and does not demonstrate communication quality or specificity."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
