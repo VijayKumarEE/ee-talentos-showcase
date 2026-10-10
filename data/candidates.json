@@ -2483,12 +2483,66 @@
       "years_experience": 8.7,
       "status": "active",
       "current_stage": "Application Review",
-      "note": "Awaiting recruiter review",
+      "note": "Assessment complete - awaiting recruiter review",
       "stage_history": [
         {
           "stage": "Application Review",
           "date": "2026-10-10",
-          "detail": null
+          "detail": {
+            "type": "ai_report",
+            "overall_recommendation": "No",
+            "overall_score": 0.33,
+            "notes": "Scored against reference production knowledge using the local LLM, with rule-based fallback for reliability.",
+            "competencies": [
+              {
+                "name": "Automation",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a generic statement that did not demonstrate any understanding of automation principles or practices. There was no technical content to evaluate against the reference knowledge.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a generic statement and does not address any aspect of the automation competency. It lacks any technical detail or explanation related to the reference knowledge."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Automation?",
+                  "What trade-offs did you consider in Automation?"
+                ]
+              },
+              {
+                "name": "Technical Aptitude",
+                "type": "technical",
+                "score": 0.0,
+                "level": "novice",
+                "summary": "The candidate provided a generic statement that did not demonstrate any understanding of technical aptitude or specific scenarios. There was no technical content to evaluate against the reference knowledge.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is a generic statement and does not address any aspect of the technical aptitude competency. It lacks any technical detail or explanation related to the reference knowledge."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Technical Aptitude?",
+                  "What trade-offs did you consider in Technical Aptitude?"
+                ]
+              },
+              {
+                "name": "Consulting Question",
+                "type": "consulting",
+                "score": 1.0,
+                "level": "novice",
+                "summary": "The candidate's answer was a very vague and unspecific statement, failing to provide a real example or clear communication as requested for a behavioral/consulting question.",
+                "positives": [],
+                "gaps": [
+                  "The candidate's answer is extremely vague and does not provide a specific example or clear communication. It does not answer the question asked in a meaningful way."
+                ],
+                "risk_flags": [],
+                "follow_up_questions": [
+                  "Can you give a concrete example for Consulting Question?"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
